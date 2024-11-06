@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Pousada Paraíso</title>
+    <link rel="stylesheet" href="styles2.css"> <!-- CSS específico para reservas -->
+</head>
+<body>
+    <!-- Cabeçalho com botões no canto superior direito -->
+    <header>
+        <h1>Pousada Paraíso</h1>
+        <nav class="menu">
+            <a href="index.html"><button class="btn">Início</button></a>
+           <a href="reservas.html"><button class="btn">Reservas</button></a> 
+           <a href="quartos.html"> <button class="btn">Quartos</button></a>
+            <button class="btn">Galeria</button>
+            <button class="btn">Contato</button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="reservas">
+            <h2>Faça Sua Reserva</h2>
+            <p>Escolha as datas e o tipo de quarto para garantir sua estadia.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé com Formulário de Reservas -->
+    <footer>
+        <section class="form-container">
+            <form action="#" method="POST" class="form-reserva">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data-checkin">Data de Check-in</label>
+                    <input type="date" id="data-checkin" name="checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data-checkout">Data de Check-out</label>
+                    <input type="date" id="data-checkout" name="checkout" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-quarto">Tipo de Quarto</label>
+                    <select id="tipo-quarto" name="quarto" required>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casal">Casal</option>
+                        <option value="duplo">Duplo</option>
+                        <option value="luxo">Luxo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="adultos">Número de Adultos</label>
+                    <input type="number" id="adultos" name="adultos" min="1" max="4" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="crianças">Número de Crianças</label>
+                    <input type="number" id="crianças" name="crianças" min="0" max="2" value="0">
+                </div>
+
+                <button type="submit" class="btn">Confirmar Reserva</button>
+            </form>
+        </section>
+    </footer>
+
+</body>
+</html>
